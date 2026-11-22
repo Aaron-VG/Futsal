@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Fútbol sala · Pizarra, jugadas y vídeos</title>
+<meta name="description" content="Pizarra táctica de fútbol sala, rotaciones del 3-1, jugadas animadas, defensa en zona 1-2-1 y vídeos con teoría.">
+<meta name="theme-color" content="#0b1220">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Ccircle cx='32' cy='32' r='28' fill='%2316a34a'/%3E%3Ccircle cx='32' cy='32' r='12' fill='%23fff'/%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Anton&family=DM+Sans:wght@400;500;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+<header class="top">
+  <div class="brand">
+    <span class="brand-ball" aria-hidden="true"></span>
+    <div>
+      <div class="brand-kicker">FÚTBOL SALA</div>
+      <div class="brand-title">Pizarra del equipo</div>
+    </div>
+  </div>
+  <nav class="tabs" role="tablist">
+    <a href="#jugadas" data-tab="jugadas" role="tab">Jugadas</a>
+    <a href="#pizarra" data-tab="pizarra" role="tab">Pizarra</a>
+    <a href="#videos" data-tab="videos" role="tab">Vídeos y teoría</a>
+  </nav>
+</header>
+
+<main>
+  <!-- JUGADAS -->
+  <section id="tab-jugadas" class="tab" hidden>
+    <div class="layout">
+      <div class="board-col">
+        <div class="board-head">
+          <div>
+            <div class="eyebrow" id="play-cat">Rotaciones</div>
+            <h1 id="play-title">Elige una jugada</h1>
+          </div>
+        </div>
+        <div class="board-wrap" id="board-plays"></div>
+        <div class="player-bar">
+          <button class="btn icon" id="pb-restart" title="Volver al inicio" aria-label="Volver al inicio">⏮</button>
+          <button class="btn icon" id="pb-prev" title="Paso anterior" aria-label="Paso anterior">◀</button>
+          <button class="btn primary" id="pb-play" aria-label="Reproducir">▶ Reproducir</button>
+          <button class="btn icon" id="pb-next" title="Paso siguiente" aria-label="Paso siguiente">▶</button>
+          <div class="speed" role="group" aria-label="Velocidad">
+            <button class="chip sm" data-speed="0.5">0,5×</button>
+            <button class="chip sm active" data-speed="1">1×</button>
+            <button class="chip sm" data-speed="1.6">1,6×</button>
+          </div>
+        </div>
+        <div class="step-now" id="step-now">Pulsa reproducir o toca un paso.</div>
+        <a class="btn ghost" id="to-board" href="#pizarra">Abrir esta posición en la pizarra libre →</a>
+      </div>
+      <aside class="side-col">
+        <p class="summary" id="play-summary"></p>
+        <ol class="steps" id="play-steps"></ol>
+        <p class="source" id="play-source"></p>
+        <h2 class="list-title">Todas las jugadas</h2>
+        <div class="chips" id="play-filter"></div>
+        <div class="play-list" id="play-list"></div>
+      </aside>
+    </div>
+  </section>
+
+  <!-- PIZARRA -->
+  <section id="tab-pizarra" class="tab" hidden>
+    <div class="layout">
+      <div class="board-col">
+        <div class="toolbar" role="toolbar" aria-label="Herramientas">
+          <div class="tools" id="tools">
+            <button class="tool active" data-tool="move" title="Mover jugadores y balón">✋ Mover</button>
+            <button class="tool" data-tool="run" title="Flecha de desmarque"><i class="sw sw-run"></i> Desmarque</button>
+            <button class="tool" data-tool="pass" title="Flecha de pase"><i class="sw sw-pass"></i> Pase</button>
+            <button class="tool" data-tool="rival" title="Movimiento rival"><i class="sw sw-rival"></i> Rival</button>
+            <button class="tool" data-tool="erase" title="Borrar una flecha">⌫ Borrar</button>
+          </div>
+        </div>
+        <div class="board-wrap" id="board-free"></div>
+        <div class="toolbar row2">
+          <label class="sel">
+            <span>Posición</span>
+            <select id="formation"></select>
+          </label>
+          <button class="btn" id="toggle-rivals">Ocultar rivales</button>
+          <button class="btn" id="undo-draw">Deshacer flecha</button>
+          <button class="btn" id="clear-draw">Borrar flechas</button>
+        </div>
+      </div>
+      <aside class="side-col">
+        <div class="card">
+          <h2>Cómo se usa</h2>
+          <ul class="howto">
+            <li><b>Mover:</b> arrastra jugadores y balón con el dedo. Si sueltas el balón junto a un jugador, pasa a ser suyo.</li>
+            <li><b>Flechas:</b> elige desmarque, pase o rival y dibuja arrastrando sobre la pista.</li>
+            <li><b>Nosotros:</b> verde y blanco. <b>Rivales:</b> rojo. Atacamos hacia la derecha (en móvil, hacia arriba).</li>
+          </ul>
+        </div>
+        <div class="card">
+          <h2>Crea tu jugada</h2>
+          <p class="muted">Coloca a los jugadores y pulsa «Añadir paso». Mueve, añade otro paso y repite. Luego la puedes reproducir y guardar en este dispositivo.</p>
+          <div class="rec-row">
+            <button class="btn primary" id="rec-add">＋ Añadir paso</button>
+            <span class="rec-count" id="rec-count">0 pasos</span>
+          </div>
+          <div class="rec-row">
+            <button class="btn" id="rec-play">▶ Reproducir</button>
+            <button class="btn" id="rec-save">Guardar</button>
+            <button class="btn ghost" id="rec-clear">Empezar de nuevo</button>
+          </div>
+          <h3 class="mini-title">Mis jugadas</h3>
+          <div id="my-plays" class="my-plays"><p class="muted">Todavía no has guardado ninguna.</p></div>
+        </div>
+      </aside>
+    </div>
+  </section>
+
+  <!-- VÍDEOS -->
+  <section id="tab-videos" class="tab" hidden>
+    <div class="chips big" id="video-cats"></div>
+    <div id="video-content"></div>
+  </section>
+</main>
+
+<footer class="foot">
+  Pizarra del equipo · Verde y blanco
+</footer>
+
+<dialog id="save-dlg">
+  <form method="dialog">
+    <h2>Guardar jugada</h2>
+    <input id="save-name" placeholder="Nombre de la jugada" maxlength="60" required>
+    <div class="dlg-actions">
+      <button class="btn ghost" value="cancel" formnovalidate>Cancelar</button>
+      <button class="btn primary" value="ok">Guardar</button>
+    </div>
+  </form>
+</dialog>
+
+<script src="data/plays.js"></script>
+<script src="assets/board.js"></script>
+<script src="assets/content.js"></script>
+<script src="assets/app.js"></script>
+</body>
+</html>

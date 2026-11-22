@@ -1,0 +1,964 @@
+{
+ "cats": {
+  "rotacion": "Rotaciones",
+  "ataque": "Jugadas de ataque",
+  "defensa": "Defensa"
+ },
+ "plays": [
+  {
+   "id": "rotacion-cierre-ala",
+   "cat": "rotacion",
+   "title": "Rotación 3-1: cierre al ala",
+   "summary": "El cierre pasa al ala, sigue su pase y ocupa la banda. El ala baja a cierre con el balón. Se repite hacia el otro lado sin parar.",
+   "source": "Vídeo del entrenador: «Rotación que rompe defensas en 5 segundos» (Futsal Training)",
+   "start": {
+    "G1": [
+     1.2,
+     10
+    ],
+    "G2": [
+     7,
+     10
+    ],
+    "G3": [
+     13,
+     2.5
+    ],
+    "G4": [
+     15.5,
+     17.5
+    ],
+    "G5": [
+     30.5,
+     10
+    ],
+    "R1": [
+     38.8,
+     10
+    ],
+    "R2": [
+     28.8,
+     10.2
+    ],
+    "R3": [
+     19.7,
+     6.5
+    ],
+    "R4": [
+     20.3,
+     14.7
+    ],
+    "R5": [
+     14.7,
+     10.2
+    ]
+   },
+   "ball": "G2",
+   "steps": [
+    {
+     "text": "El cierre (2) pasa al ala (3).",
+     "ball": "G3",
+     "moves": {
+      "R3": [
+       17,
+       4
+      ],
+      "R5": [
+       15.5,
+       8
+      ],
+      "R4": [
+       20,
+       13
+      ]
+     },
+     "dur": 1.2
+    },
+    {
+     "text": "El cierre sigue su pase y va hacia el ala.",
+     "moves": {
+      "G2": [
+       12.5,
+       4.2
+      ]
+     },
+     "dur": 1.3
+    },
+    {
+     "text": "El cierre ocupa la banda y el ala baja a la posición de cierre con el balón.",
+     "moves": {
+      "G2": [
+       17,
+       1.6
+      ],
+      "G3": [
+       7.5,
+       9.6
+      ],
+      "R3": [
+       19.5,
+       3.2
+      ],
+      "R5": [
+       14,
+       9
+      ]
+     },
+     "ball": "G3",
+     "dur": 1.8
+    },
+    {
+     "text": "El nuevo cierre (3) pasa al otro ala (4).",
+     "ball": "G4",
+     "moves": {
+      "R5": [
+       15.5,
+       12
+      ],
+      "R4": [
+       18.5,
+       16
+      ],
+      "R3": [
+       21,
+       5.5
+      ]
+     },
+     "dur": 1.2
+    },
+    {
+     "text": "Y repite: sigue su pase hacia el ala.",
+     "moves": {
+      "G3": [
+       12.5,
+       15.6
+      ]
+     },
+     "dur": 1.3
+    },
+    {
+     "text": "3 ocupa la banda y 4 baja a cierre. La rotación nunca para.",
+     "moves": {
+      "G3": [
+       17,
+       18.4
+      ],
+      "G4": [
+       7.5,
+       10.4
+      ],
+      "R4": [
+       19.5,
+       17
+      ],
+      "R5": [
+       14,
+       11
+      ]
+     },
+     "ball": "G4",
+     "dur": 1.8
+    }
+   ]
+  },
+  {
+   "id": "jugada-rompe-defensas",
+   "cat": "ataque",
+   "title": "Jugada: rompe defensas en 5 segundos",
+   "summary": "Después de la rotación: apertura, devolución, pase vertical al pívot que baja, descarga a la banda y pase al segundo palo.",
+   "source": "Vídeo del entrenador: «Rotación que rompe defensas en 5 segundos» (Futsal Training)",
+   "start": {
+    "G1": [
+     1.2,
+     10
+    ],
+    "G2": [
+     19,
+     2
+    ],
+    "G3": [
+     8,
+     9.6
+    ],
+    "G4": [
+     16,
+     18
+    ],
+    "G5": [
+     30.5,
+     10
+    ],
+    "R1": [
+     38.8,
+     10
+    ],
+    "R2": [
+     28.8,
+     10.2
+    ],
+    "R3": [
+     22,
+     4.5
+    ],
+    "R4": [
+     21,
+     15
+    ],
+    "R5": [
+     15,
+     10
+    ]
+   },
+   "ball": "G3",
+   "steps": [
+    {
+     "text": "Tras la rotación, el cierre (3) abre al ala (4).",
+     "ball": "G4",
+     "moves": {
+      "G3": [
+       10.2,
+       13
+      ],
+      "R4": [
+       19.5,
+       16.5
+      ],
+      "R5": [
+       15.5,
+       12
+      ]
+     },
+     "dur": 1.3
+    },
+    {
+     "text": "4 devuelve a 3 y el pívot (5) baja a ofrecerse.",
+     "ball": "G3",
+     "moves": {
+      "G3": [
+       10.8,
+       13.8
+      ],
+      "G5": [
+       27.5,
+       11.2
+      ],
+      "R2": [
+       26,
+       11
+      ],
+      "R5": [
+       15,
+       12.5
+      ]
+     },
+     "dur": 1.4
+    },
+    {
+     "text": "3 juega vertical al pívot. 4 y 2 atacan el espacio.",
+     "ball": "G5",
+     "moves": {
+      "G4": [
+       29.5,
+       18
+      ],
+      "G2": [
+       25,
+       2.5
+      ],
+      "G3": [
+       16,
+       13.5
+      ],
+      "R4": [
+       24.5,
+       16
+      ],
+      "R3": [
+       23.5,
+       4.5
+      ]
+     },
+     "dur": 1.5
+    },
+    {
+     "text": "El pívot descarga a la banda para 4.",
+     "ball": "G4",
+     "moves": {
+      "G4": [
+       31.2,
+       17.4
+      ],
+      "G2": [
+       30.5,
+       4.6
+      ],
+      "R4": [
+       28,
+       15.5
+      ],
+      "R2": [
+       27,
+       12.5
+      ]
+     },
+     "dur": 1.3
+    },
+    {
+     "text": "4 pone el balón al segundo palo y 2 llega desde el otro lado.",
+     "ball": [
+      36.1,
+      7.3
+     ],
+     "moves": {
+      "G2": [
+       36.1,
+       7.3
+      ],
+      "R3": [
+       32,
+       6
+      ],
+      "R1": [
+       38.5,
+       11
+      ]
+     },
+     "dur": 1.4
+    },
+    {
+     "text": "¡Gol!",
+     "ball": [
+      39.7,
+      8.9
+     ],
+     "moves": {
+      "G2": [
+       36.6,
+       7.6
+      ]
+     },
+     "dur": 0.9
+    }
+   ]
+  },
+  {
+   "id": "corte-cierre-paralela",
+   "cat": "ataque",
+   "title": "Corte del cierre + paralela",
+   "summary": "El cierre pasa al ala y corta por fuera, pegado a la banda. El ala le devuelve en paralela.",
+   "source": "Corte del cierre, explicado por Ángel Ros (FUTS4LL)",
+   "start": {
+    "G1": [
+     1.2,
+     10
+    ],
+    "G2": [
+     7,
+     10
+    ],
+    "G3": [
+     13,
+     2.5
+    ],
+    "G4": [
+     15.5,
+     17.5
+    ],
+    "G5": [
+     30.5,
+     10
+    ],
+    "R1": [
+     38.8,
+     10
+    ],
+    "R2": [
+     28.8,
+     10.2
+    ],
+    "R3": [
+     19.7,
+     6.5
+    ],
+    "R4": [
+     20.3,
+     14.7
+    ],
+    "R5": [
+     14.7,
+     10.2
+    ]
+   },
+   "ball": "G2",
+   "steps": [
+    {
+     "text": "El cierre (2) pasa al ala (3).",
+     "ball": "G3",
+     "moves": {
+      "R3": [
+       17,
+       3.8
+      ],
+      "R5": [
+       15.5,
+       8
+      ]
+     },
+     "dur": 1.2
+    },
+    {
+     "text": "2 corta por fuera, pegado a la banda. 3 se separa hacia dentro.",
+     "moves": {
+      "G2": [
+       24,
+       1.2
+      ],
+      "G3": [
+       12.5,
+       4.5
+      ],
+      "R3": [
+       16,
+       4.6
+      ]
+     },
+     "dur": 1.6
+    },
+    {
+     "text": "Paralela: 3 juega al espacio por la banda. 3 baja a cierre.",
+     "ball": "G2",
+     "moves": {
+      "G3": [
+       8,
+       9.6
+      ],
+      "R3": [
+       21,
+       2.5
+      ]
+     },
+     "dur": 1.3
+    },
+    {
+     "text": "2 conduce y busca al pívot, que gira hacia portería.",
+     "moves": {
+      "G2": [
+       29,
+       2
+      ],
+      "G5": [
+       32.5,
+       8.6
+      ],
+      "R2": [
+       33.5,
+       9.6
+      ]
+     },
+     "ball": "G5",
+     "dur": 1.5
+    },
+    {
+     "text": "Remate.",
+     "ball": [
+      39.7,
+      9.6
+     ],
+     "dur": 0.8
+    }
+   ]
+  },
+  {
+   "id": "corte-cierre-pared",
+   "cat": "ataque",
+   "title": "Corte del cierre + pared",
+   "summary": "El cierre pasa al ala y corta por dentro. El ala le devuelve de primeras: pared (uno-dos).",
+   "source": "Corte del cierre, explicado por Ángel Ros (FUTS4LL)",
+   "start": {
+    "G1": [
+     1.2,
+     10
+    ],
+    "G2": [
+     7,
+     10
+    ],
+    "G3": [
+     13,
+     2.5
+    ],
+    "G4": [
+     15.5,
+     17.5
+    ],
+    "G5": [
+     30.5,
+     10
+    ],
+    "R1": [
+     38.8,
+     10
+    ],
+    "R2": [
+     28.8,
+     10.2
+    ],
+    "R3": [
+     19.7,
+     6.5
+    ],
+    "R4": [
+     20.3,
+     14.7
+    ],
+    "R5": [
+     14.7,
+     10.2
+    ]
+   },
+   "ball": "G2",
+   "steps": [
+    {
+     "text": "El cierre (2) pasa al ala (3).",
+     "ball": "G3",
+     "moves": {
+      "R3": [
+       16.5,
+       3.8
+      ],
+      "R5": [
+       15.5,
+       8
+      ]
+     },
+     "dur": 1.2
+    },
+    {
+     "text": "2 corta por dentro, a la espalda del defensor del ala.",
+     "moves": {
+      "G2": [
+       20.5,
+       6.5
+      ]
+     },
+     "dur": 1.5
+    },
+    {
+     "text": "Pared: 3 devuelve de primeras al hueco.",
+     "ball": "G2",
+     "moves": {
+      "G2": [
+       23,
+       7.2
+      ],
+      "G3": [
+       8,
+       9.6
+      ],
+      "R5": [
+       18,
+       8.5
+      ]
+     },
+     "dur": 1.3
+    },
+    {
+     "text": "2 queda solo para tirar. 3 ya está de cierre.",
+     "ball": [
+      39.7,
+      9.2
+     ],
+     "dur": 0.9
+    }
+   ]
+  },
+  {
+   "id": "corte-cierre-bloqueo",
+   "cat": "ataque",
+   "title": "Corte del cierre + bloqueo (ala presionado)",
+   "summary": "Si aprietan al ala, el cierre no corta al espacio: va a bloquear al defensor del ala para liberarlo.",
+   "source": "Corte del cierre, explicado por Ángel Ros (FUTS4LL)",
+   "start": {
+    "G1": [
+     1.2,
+     10
+    ],
+    "G2": [
+     7,
+     10
+    ],
+    "G3": [
+     13,
+     2.5
+    ],
+    "G4": [
+     15.5,
+     17.5
+    ],
+    "G5": [
+     30.5,
+     10
+    ],
+    "R1": [
+     38.8,
+     10
+    ],
+    "R2": [
+     28.8,
+     10.2
+    ],
+    "R3": [
+     15.2,
+     3.6
+    ],
+    "R4": [
+     20.3,
+     14.7
+    ],
+    "R5": [
+     14.7,
+     10.2
+    ]
+   },
+   "ball": "G2",
+   "steps": [
+    {
+     "text": "El cierre (2) pasa al ala (3), que está presionado.",
+     "ball": "G3",
+     "moves": {
+      "R5": [
+       15.5,
+       8
+      ]
+     },
+     "dur": 1.2
+    },
+    {
+     "text": "2 va a bloquear al defensor del ala.",
+     "moves": {
+      "G2": [
+       15.6,
+       4.6
+      ]
+     },
+     "block": [
+      "G2"
+     ],
+     "dur": 1.4
+    },
+    {
+     "text": "3 sale por el bloqueo hacia dentro, con ventaja.",
+     "moves": {
+      "G3": [
+       20,
+       7.2
+      ],
+      "R5": [
+       18.5,
+       9.5
+      ]
+     },
+     "ball": "G3",
+     "dur": 1.4
+    },
+    {
+     "text": "3 juega al pívot o tira. 2 se queda de cierre.",
+     "moves": {
+      "G2": [
+       9,
+       9.5
+      ]
+     },
+     "ball": "G5",
+     "dur": 1.2
+    }
+   ]
+  },
+  {
+   "id": "corte-ala",
+   "cat": "rotacion",
+   "title": "Corte del ala entre líneas",
+   "summary": "El ala contrario entra entre líneas. Crea dudas en la defensa y deja la banda libre para que el pívot reciba.",
+   "source": "Corte del ala, explicado por Ángel Ros (FUTS4LL)",
+   "start": {
+    "G1": [
+     1.2,
+     10
+    ],
+    "G2": [
+     7,
+     10
+    ],
+    "G3": [
+     13,
+     2.5
+    ],
+    "G4": [
+     15.5,
+     17.5
+    ],
+    "G5": [
+     30.5,
+     10
+    ],
+    "R1": [
+     38.8,
+     10
+    ],
+    "R2": [
+     28.8,
+     10.2
+    ],
+    "R3": [
+     19.7,
+     6.5
+    ],
+    "R4": [
+     20.3,
+     14.7
+    ],
+    "R5": [
+     14.7,
+     10.2
+    ]
+   },
+   "ball": "G2",
+   "steps": [
+    {
+     "text": "El cierre (2) abre al ala (4).",
+     "ball": "G4",
+     "moves": {
+      "R4": [
+       18.5,
+       15.8
+      ],
+      "R5": [
+       15.5,
+       12
+      ]
+     },
+     "dur": 1.2
+    },
+    {
+     "text": "El otro ala (3) corta en diagonal y entra entre líneas.",
+     "moves": {
+      "G3": [
+       21.5,
+       9.2
+      ],
+      "R3": [
+       20.5,
+       8.2
+      ],
+      "G2": [
+       10,
+       7
+      ]
+     },
+     "dur": 1.6
+    },
+    {
+     "text": "El pívot (5) cae a la banda que ha quedado libre.",
+     "moves": {
+      "G5": [
+       27,
+       2.5
+      ],
+      "R2": [
+       27.5,
+       4.5
+      ]
+     },
+     "dur": 1.4
+    },
+    {
+     "text": "4 juega con 3 entre líneas.",
+     "ball": "G3",
+     "dur": 1.1
+    },
+    {
+     "text": "3 abre al pívot, que recibe en banda con ventaja.",
+     "ball": "G5",
+     "moves": {
+      "G4": [
+       24,
+       16.5
+      ]
+     },
+     "dur": 1.2
+    }
+   ]
+  },
+  {
+   "id": "defensa-zona-121",
+   "cat": "defensa",
+   "title": "Defensa en zona 1-2-1 (rombo)",
+   "summary": "Defendemos en rombo: uno delante, dos en medio y el cierre atrás. El rombo se mueve entero hacia el lado del balón.",
+   "source": "Vídeo del entrenador: «Defensa en zona 1-2-1» (Fernando Martín)",
+   "start": {
+    "G1": [
+     1.2,
+     10
+    ],
+    "G2": [
+     7.4,
+     9.1
+    ],
+    "G3": [
+     12.2,
+     4.7
+    ],
+    "G4": [
+     11.2,
+     13
+    ],
+    "G5": [
+     14.4,
+     8.8
+    ],
+    "R1": [
+     38.8,
+     10
+    ],
+    "R2": [
+     17.5,
+     17
+    ],
+    "R3": [
+     18.5,
+     5.4
+    ],
+    "R4": [
+     21,
+     10.6
+    ],
+    "R5": [
+     7.2,
+     6.0
+    ]
+   },
+   "ball": "R3",
+   "steps": [
+    {
+     "text": "Rombo: 5 delante, 3 y 4 en medio, 2 atrás junto al pívot rival.",
+     "dur": 1.6
+    },
+    {
+     "text": "El balón va al centro: el rombo se centra.",
+     "ball": "R4",
+     "moves": {
+      "G2": [
+       8.2,
+       9.6
+      ],
+      "G3": [
+       11.6,
+       5.8
+      ],
+      "G4": [
+       11.6,
+       13.4
+      ],
+      "G5": [
+       15.3,
+       9.6
+      ],
+      "R5": [
+       5.7,
+       11
+      ]
+     },
+     "dur": 1.7
+    },
+    {
+     "text": "El balón va a la derecha: todo el rombo bascula hacia ese lado.",
+     "ball": "R2",
+     "moves": {
+      "R2": [
+       18.4,
+       15.5
+      ],
+      "G2": [
+       7.5,
+       11.4
+      ],
+      "G3": [
+       10.6,
+       6.8
+      ],
+      "G4": [
+       12.8,
+       14.4
+      ],
+      "G5": [
+       14.2,
+       10.6
+      ],
+      "R5": [
+       4.2,
+       14
+      ]
+     },
+     "dur": 1.7
+    },
+    {
+     "text": "Balón en la banda: 4 sale al balón, 5 cierra dentro, 3 vigila el segundo palo y 2 sigue al pívot.",
+     "moves": {
+      "R2": [
+       16.5,
+       18.3
+      ],
+      "G2": [
+       6.5,
+       13.7
+      ],
+      "G3": [
+       9.4,
+       7.8
+      ],
+      "G4": [
+       13.7,
+       16.2
+      ],
+      "G5": [
+       12.4,
+       11.8
+      ],
+      "R5": [
+       4,
+       16.6
+      ]
+     },
+     "dur": 1.7
+    },
+    {
+     "text": "El balón vuelve al centro: recuperamos el rombo, más cerca de nuestra portería.",
+     "ball": "R4",
+     "moves": {
+      "R4": [
+       19.2,
+       10.8
+      ],
+      "G2": [
+       5.6,
+       14.6
+      ],
+      "G3": [
+       7.6,
+       7.8
+      ],
+      "G4": [
+       10.4,
+       14.8
+      ],
+      "G5": [
+       11,
+       11
+      ]
+     },
+     "dur": 1.8
+    }
+   ]
+  }
+ ]
+}
